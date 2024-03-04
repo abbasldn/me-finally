@@ -12,8 +12,6 @@ import image5 from '@/images/photos/image-5.jpg'
 async function addEmailToSequence(formData: FormData) {
   'use server'
 
-  console.log('formData', formData.get('email'))
-
   const res = await fetch(
     'https://api.convertkit.com/v3/forms/6285163/subscribe',
     {
@@ -58,7 +56,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Newsletter() {
   return (
     <form
-      action="/thank-you"
+      action={addEmailToSequence}
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-lg font-semibold text-zinc-900 dark:text-zinc-100">
