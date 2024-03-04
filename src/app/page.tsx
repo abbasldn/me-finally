@@ -3,11 +3,11 @@ import clsx from 'clsx'
 
 import { Button } from '../components/Button'
 import { Container } from '../components/Container'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '../images/photos/image-1.jpg'
+import image2 from '../images/photos/image-2.jpg'
+import image3 from '../images/photos/image-3.jpg'
+import image4 from '../images/photos/image-4.jpg'
+import image5 from '../images/photos/image-5.jpg'
 
 async function addEmailToSequence(formData: FormData) {
   'use server'
